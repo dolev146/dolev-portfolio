@@ -1,0 +1,29 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  transform: translateX(-10vw);
+}
+.content-wrapper {
+  min-height: calc(100vh - 20px);
+}
+body {
+  margin: auto;
+  width: 80%;
+}
+
+#the-content {
+  background-color: rgba(135, 248, 195, 0.4);
+  padding: 2%;
+  margin-bottom: 2%;
+  line-height: 1.5rem;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #152ebb;
+  color: white;
+  height: 20px;
+}
