@@ -12,7 +12,7 @@ app.use(express.json())
 
 app.use("/api/contact", require("./routes/contact"));
 
-app.use("/", express.static(__dirname + "./dist"));
+app.use("/", express.static(__dirname + "/dist"));
 
 app.get("/api", async (req, res) => {
   console.log('dolev')
