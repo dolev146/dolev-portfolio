@@ -19,7 +19,7 @@ app.get("/api", async (req, res) => {
   res.json({msg:'dolev'})
 })
 
-const port = process.env.PORT || 80
+const port = process.env.PORT || 80;
 
 // listening
 app.listen(port, () => {
