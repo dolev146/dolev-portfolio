@@ -2,7 +2,7 @@ const contactForm = document.querySelector("#contact-form");
 
 const sending_email = async (FD) => {
   const stringified = await JSON.stringify(Object.fromEntries(FD));
-  let res = await fetch("/api/contact/email", {
+  let res = await fetch("http://localhost:1000/api/contact/email", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: stringified,
@@ -12,7 +12,7 @@ const sending_email = async (FD) => {
 };
 
 const sending_sms = async (phone_number) => {
-  let res = await fetch("/api/contact/sms", {
+  let res = await fetch("http://localhost:1000/api/contact/sms", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify({ phone_number }),

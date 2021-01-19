@@ -1,0 +1,230 @@
+// Widescreens
+@include mediaXl {
+  .splide__slide {
+    height: 35vh;
+  }
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
+// Dexktops and laptops
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
+// Tablets &mall laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+  .see-my-work {
+    position: absolute;
+    left: 60px;
+    width: 150px;
+    top: 27px;
+  }
+  .see-my-work2 {
+    display: none;
+  }
+
+  .see-my-work3 {
+    content: "Contact";
+    position: absolute;
+    left: 235px;
+    width: 170px;
+    top: 27px;
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .right-header {
+    display: block;
+  }
+
+  .preview {
+    display: inline-block;
+    position: initial;
+    width: 22%;
+    margin-left: -300px;
+    text-align: center;
+  }
+
+  .fix-the-size-bug {
+    position: absolute;
+    right: 500%;
+    margin-left: 300px;
+    top: 212%;
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url("../img/portrait_small.jpg");
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
+
+  .skills-header {
+    &:before {
+      width: 50px;
+    }
+    &:after {
+      width: 50px;
+    }
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #main-footer {
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  main {
+    padding: 2rem;
+  }
+
+  .preview {
+    display: none;
+  }
+
+  main#home h1 {
+    margin-top: 10vh;
+  }
+
+  .lg-heading {
+    margin-top: 2.5rem;
+    font-size: 5rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .see-my-work {
+    position: absolute;
+    left: 35px;
+    top: 27px;
+  }
+
+  .see-my-work2 {
+    display: none;
+  }
+
+  .see-my-work3 {
+    display: none;
+  }
+
+  .boxes {
+    div {
+      font-size: 1rem;
+      border: 1.5px #fff solid;
+      padding: 1rem 2.5rem;
+    }
+  }
+
+  #main-footer {
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-flow: row wrap;
+    height: 50%;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 60%;
+    line-height: 1.5rem;
+    .footer-link {
+      text-align: center;
+    }
+  }
+
+  .skills-header {
+    &:before {
+      width: 10px;
+    }
+    &:after {
+      width: 10px;
+    }
+  }
+
+  .mobile_footer {
+    display: flex;
+  }
+  body {
+    margin: 0 0 55px 0;
+  }
+}
