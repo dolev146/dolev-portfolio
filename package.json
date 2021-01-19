@@ -5,7 +5,8 @@
   "main": "index.js",
   "homepage": "https://dolev146.github.io/modern_portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "start": "node index.js"
   },
   "author": "Dolev Dublon",
   "license": "ISC",
