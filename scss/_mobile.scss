@@ -117,7 +117,7 @@
     }
   }
 
-   .multerlogo {
+  .multerlogo {
     width: 40vw;
   }
 
@@ -155,6 +155,10 @@
 @include mediaSm {
   main {
     padding: 2rem;
+    &.fix-padding-in-contact-page {
+      padding: 0.3rem;
+      width: 100vw;
+    }
   }
 
   .dont-diplay-on-small-screens {
@@ -174,6 +178,11 @@
     font-size: 5rem;
 
     .vaction {
+      font-size: 4rem;
+    }
+
+    &.in-contact {
+      margin-top: 4rem;
       font-size: 4rem;
     }
   }

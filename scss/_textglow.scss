@@ -1,0 +1,39 @@
+.text-glow {
+  text-transform: uppercase;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, darken($primary-color, 5));
+  letter-spacing: 12px;
+  outline: none;
+  width: 10vw;
+  font-weight: 900;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px $secondary-color, 0 0 20px $secondary-color,
+      0 0 40px $secondary-color, 0 0 80px $secondary-color,
+      0 0 160px $secondary-color;
+  }
+}

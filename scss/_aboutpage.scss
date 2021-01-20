@@ -1,0 +1,95 @@
+.skills-header {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background: $secondary-color;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background: $secondary-color;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+  }
+
+  span {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    transform: translateX(20px);
+    white-space: pre;
+  }
+
+  span.fade {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.fit-image {
+  object-fit: cover;
+  height: 150px;
+}
+
+.right-header {
+  text-decoration-color: $secondary-color;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+  .job-2 {
+    grid-area: job2;
+  }
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+    @include easeOut;
+    &:hover {
+      box-shadow: 10px 20px 30px $secondary-color;
+    }
+  }
+}

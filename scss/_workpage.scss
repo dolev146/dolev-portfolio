@@ -1,0 +1,148 @@
+//Work/Projects
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      transition: all 0.5s ease-in-out;
+    }
+    &.no-hover-effect {
+      &:hover {
+        opacity: 1;
+        border-color: #fff;
+        @include easeOut;
+      }
+    }
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
+.flex-anchors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-multer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.version2 {
+  color: adjust-hue($color: $secondary-color, $degrees: 90deg);
+}
+.multerlogo {
+  width: 29vw;
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      transition: all 0.5s ease-in-out;
+    }
+    &.no-hover-effect {
+      &:hover {
+        opacity: 1;
+        border-color: #fff;
+        @include easeOut;
+      }
+    }
+  }
+}
+
+.cool-border {
+  border: 2px solid $secondary-color;
+  filter: hue-rotate(160deg);
+  padding: 10px;
+  color: lighten($color: $primary-color, $amount: 80);
+  border-radius: 99999px;
+  text-transform: uppercase;
+  background: darken($color: $secondary-color, $amount: 40);
+}
+
+.margin-top {
+  margin-top: 100px;
+}
+
+.margin-top-10px {
+  margin-top: 20px;
+}
+
+.skill {
+  background: lighten($primary-color, 70);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+  color: $primary-color;
+  @include easeOut;
+  &:hover {
+    box-shadow: 10px 20px 30px $secondary-color;
+  }
+  &img:hover {
+    box-shadow: none;
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background-color: $secondary-color;
+    color: set-text-color($secondary-color);
+    @include easeOut;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($color: $primary-color, $amount: 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($color: $primary-color, $amount: 50);
+  color: #333;
+}
+
+//Contact Page
+// .boxes {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   margin-top: 1rem;
+
+//   div {
+//     font-size: 2rem;
+//     border: 3px #fff solid;
+//     padding: 1.5rem 2.5rem;
+//     margin-bottom: 3rem;
+//     @include easeOut;
+//     &:hover {
+//       padding: 0.5rem 1.5rem;
+//       background-color: $secondary-color;
+//       color: set-text-color($secondary-color);
+//       span {
+//         color: set-text-color($secondary-color);
+//       }
+//     }
+//   }
+// }

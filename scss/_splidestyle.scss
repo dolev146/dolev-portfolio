@@ -1,0 +1,29 @@
+.splide__slide {
+  border: 5px solid $secondary-color;
+  margin-top: 5px;
+  margin-right: 27px !important;
+  height: 162px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  line-height: 1.5;
+  animation: anim-glow 1s infinite alternate;
+  transition: border-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1),
+    background-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1);
+}
+
+@keyframes anim-glow {
+  0% {
+    box-shadow: 0 0 2px -2px $secondary-color;
+  }
+  100% {
+    box-shadow: 0 0 2px 2px $secondary-color;
+  }
+}
+
+.splide {
+  margin-top: 15px;
+}
+.splide__track {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}

@@ -25,7 +25,7 @@
     <a href="about.html" class="see-my-work see-my-work2 in-work-page">about me</a>
     <a href="index.html" class="see-my-work see-my-work3  in-about-me-page in-work-page-home">Home</a>
     <header>
-        <div class="menu-btn"> 
+        <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
@@ -60,8 +60,8 @@
         </nav>
     </header>
 
-    <main id="contcat">
-        <h1 class="lg-heading">
+    <main id="contcat" class="fix-padding-in-contact-page">
+        <h1 class="lg-heading in-contact">
             Contact
             <span class="text-secondary">Me</span>
         </h1>
@@ -93,13 +93,12 @@
                         <p>
                             <label for="email">Email Address* <br><span class="xx-small">for example :
                                     abc@gmail.com</span></label>
-                            <input required type="email" name="email"  title="for example : must be abc@gmail.com">
+                            <input required type="email" name="email" title="for example : must be abc@gmail.com">
                         </p>
                         <p>
                             <label for="phone">Phone Number* <br> <span class="x-small">for example :
                                     05xxxxxxxx</span> </label>
-                            <input required type="text" name="phone"
-                                title="for example : must be 05xxxxxxxx">
+                            <input required type="text" name="phone" title="for example : must be 05xxxxxxxx">
                         </p>
                         <p class="full">
                             <label for="message">Message </label>
@@ -109,6 +108,20 @@
                             <button>Submit</button>
                         </p>
                     </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-wrapper">
+            <div id="my-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Dolev Portfolio</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for reaching out!</p>
+                        <p>I will contact you as soon as possible.</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,97 @@
+.see-my-work {
+  position: absolute;
+  padding: 10px 30px;
+  right: 130px;
+  top: 35px;
+  color: lighten($secondary-color, 30);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+  font-size: 15px;
+  transition: 0.5s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid $secondary-color;
+    border-left: 2px solid $secondary-color;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+
+  &:hover:before {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid $secondary-color;
+    border-right: 2px solid $secondary-color;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+
+  &:hover {
+    background: $secondary-color;
+    color: $primary-color;
+    box-shadow: 0 0 50px lighten($color: $secondary-color, $amount: 30);
+    transition-delay: 0.5s;
+  }
+
+  &:hover:after {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+  }
+
+  &:nth-child(1) {
+    filter: hue-rotate(270deg);
+  }
+  &:nth-child(3) {
+    filter: hue-rotate(115deg);
+  }
+  &:nth-child(4) {
+    filter: hue-rotate(270deg);
+  }
+}
+
+
+
+.see-my-work2 {
+  position: absolute;
+  padding: 10px 30px;
+  right: 300px;
+  top: 35px;
+  &.in-work-page {
+    right: 310px;
+  }
+}
+
+.see-my-work3 {
+  position: absolute;
+  padding: 10px 30px;
+  right: 470px;
+  top: 35px;
+
+  &.in-about-me-page {
+    right: 590px;
+    width: 170px;
+  }
+
+  &.in-work-page-home {
+    right: 500px;
+    width: 130px;
+    text-align: center;
+  }
+}
