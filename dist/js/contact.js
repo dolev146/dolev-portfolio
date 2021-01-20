@@ -26,7 +26,9 @@ contactForm.addEventListener("submit", async (e) => {
   try {
     const FD = await new FormData(contactForm);
     await sending_email(FD);
-    await sending_sms(contactForm.elements["phone"].value);
+    if (/^(05)\d{8}/.test(contactForm.elements["phone"].value)) {
+      await sending_sms(contactForm.elements["phone"].value);
+    }
     contactForm.reset();
   } catch (error) {
     console.log(error);
