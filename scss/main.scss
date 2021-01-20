@@ -285,6 +285,35 @@ main {
   align-items: center;
 }
 
+.flex-multer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.version2{
+  color: adjust-hue($color: $secondary-color, $degrees: 90deg) ;
+}
+.multerlogo {
+  width: 29vw;
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      transition: all 0.5s ease-in-out;
+    }
+    &.no-hover-effect {
+      &:hover {
+        opacity: 1;
+        border-color: #fff;
+        @include easeOut;
+      }
+    }
+  }
+}
+
 .cool-border {
   border: 2px solid $secondary-color;
   filter: hue-rotate(160deg);
@@ -297,6 +326,10 @@ main {
 
 .margin-top {
   margin-top: 100px;
+}
+
+.margin-top-10px {
+  margin-top: 20px;
 }
 
 .skill {

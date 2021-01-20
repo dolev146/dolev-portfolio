@@ -477,6 +477,28 @@ main {
   justify-content: space-around;
   align-items: center; }
 
+.flex-multer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.version2 {
+  color: #b403f4; }
+
+.multerlogo {
+  width: 29vw; }
+  .multerlogo img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .multerlogo img:hover {
+      opacity: 0.5;
+      border-color: #03bcf4;
+      transition: all 0.5s ease-in-out; }
+    .multerlogo img.no-hover-effect:hover {
+      opacity: 1;
+      border-color: #fff;
+      transition: all 0.5s ease-out; }
+
 .cool-border {
   border: 2px solid #03bcf4;
   filter: hue-rotate(160deg);
@@ -488,6 +510,9 @@ main {
 
 .margin-top {
   margin-top: 100px; }
+
+.margin-top-10px {
+  margin-top: 20px; }
 
 .skill {
   background: #c3e8f2;
@@ -740,6 +765,8 @@ ul {
       background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px; }
+  .multerlogo {
+    width: 40vw; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
@@ -757,6 +784,8 @@ ul {
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem; }
+  .dont-diplay-on-small-screens {
+    display: none; }
   .preview {
     display: none; }
   main#home h1 {
@@ -764,6 +793,8 @@ ul {
   .lg-heading {
     margin-top: 2.5rem;
     font-size: 5rem; }
+    .lg-heading .vaction {
+      font-size: 4rem; }
   .projects {
     grid-template-columns: 1fr; }
   .see-my-work {
@@ -797,6 +828,8 @@ ul {
     width: 10px; }
   .skills-header:after {
     width: 10px; }
+  .multerlogo {
+    width: 90vw; }
   .mobile_footer {
     display: flex; }
   body {
