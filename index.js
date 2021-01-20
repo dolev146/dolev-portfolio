@@ -19,6 +19,10 @@ app.get("/api", async (req, res) => {
   res.json({msg:'dolev'})
 })
 
+
+app.get("*",  (req, res) => {
+  res.redirect("/")
+})
 const port = process.env.PORT || 80;
 
 // listening
