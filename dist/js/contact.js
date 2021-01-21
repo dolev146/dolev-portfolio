@@ -50,7 +50,10 @@ contactForm.addEventListener("submit", async (e) => {
     }
     console.log(contactForm.elements["phone"].value);
     if (/^(9725)\d{7}/.test(contactForm.elements["phone"].value)) {
-        await sending_sms(`0${contactForm.elements["phone"].value.substr(3)}`);
+      await sending_sms(`0${contactForm.elements["phone"].value.substr(3)}`);
+    }
+    if (/^([+](9725))\d{8}/.test(contactForm.elements["phone"].value)) {
+      await sending_sms(`0${contactForm.elements["phone"].value.substr(4)}`);
     }
     openModal();
     contactForm.reset();

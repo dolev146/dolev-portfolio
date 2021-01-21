@@ -30,13 +30,15 @@ router.post("/email", async (req, res) => {
 router.post("/sms", async (req, res) => {
   try {
     const { phone_number } = req.body;
-    console.log(phone_number)
-    const sms = new sms_function();
-    const msg = `
+    console.log(phone_number);
+    if (/^(05)\d{8}/.test(phone_number)) {
+      const sms = new sms_function();
+      const msg = `
 תודה שפנית אליי , אחזור אליך בקרוב 
   דולב דובלון`;
-    sms.sendSms(phone_number, msg);
-    res.json({ msg: "SMS send seccessfully to", err: false });
+      sms.sendSms(phone_number, msg);
+      res.json({ msg: "SMS send seccessfully to", err: false });
+    }
   } catch (error) {
     res.sendStatus(500);
   }
