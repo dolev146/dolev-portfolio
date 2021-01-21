@@ -446,7 +446,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  gap: 30px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
@@ -474,7 +474,7 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  gap: 0.7rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -545,23 +545,37 @@ main {
   .skillimg:hover {
     box-shadow: none; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .btn-info {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem calc(1rem - 10px);
+  text-align: center;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-info:hover {
     background-color: #03bcf4;
     color: #000;
     transition: all 0.5s ease-out; }
 
 .btn-dark {
   background: black;
-  color: #fff; }
+  color: #fff;
+  grid-area: btn-dark; }
 
 .btn-light {
   background: #6fc8e0;
-  color: #333; }
+  color: #333;
+  grid-area: btn-light; }
+
+.btn-info {
+  background: #036cf4;
+  color: #fff;
+  grid-area: btn-info; }
+
+.button-container {
+  width: 100%;
+  display: grid;
+  column-gap: 8px;
+  grid-template-areas: "btn-info btn-info" "btn-light btn-dark"; }
 
 #main-footer {
   display: flex;
@@ -674,7 +688,7 @@ ul {
 .contact form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px; }
+  gap: 20px; }
 
 .contact form label {
   display: block; }

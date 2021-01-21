@@ -3,7 +3,7 @@
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem;
+  gap: 0.7rem;
 
   img {
     width: 100%;
@@ -100,7 +100,8 @@
 // Button Styles
 .btn {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem calc(1rem - 10px);
+  text-align: center;
   border: 0;
   margin-bottom: 0.3rem;
   &:hover {
@@ -114,12 +115,21 @@
   @extend .btn;
   background: darken($color: $primary-color, $amount: 50);
   color: #fff;
+  grid-area: btn-dark;
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($color: $primary-color, $amount: 50);
   color: #333;
+  grid-area: btn-light;
+}
+
+.btn-info {
+  @extend .btn;
+  background: adjust-hue($color: $secondary-color, $degrees: 20deg);
+  color: #fff;
+  grid-area: btn-info;
 }
 
 //Contact Page
@@ -146,3 +156,14 @@
 //     }
 //   }
 // }
+
+.button-container {
+  width: 100%;
+  display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  column-gap: 8px;
+  grid-template-areas:
+    "btn-info btn-info"
+    "btn-light btn-dark";
+}
