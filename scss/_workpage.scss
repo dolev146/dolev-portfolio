@@ -74,6 +74,11 @@
   border-radius: 99999px;
   text-transform: uppercase;
   background: darken($color: $secondary-color, $amount: 40);
+  box-shadow: 0 0 10px lighten($color: $secondary-color, $amount: 30);
+  transition: box-shadow 0.5s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 50px lighten($color: $secondary-color, $amount: 30);
+  }
 }
 
 .margin-top {

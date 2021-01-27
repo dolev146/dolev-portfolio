@@ -129,6 +129,10 @@
       "job2"
       "job3";
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .cool-border {
+    margin-bottom: 10px;
   }
 
   .skills-header {
@@ -189,8 +193,8 @@
 
   .projects {
     grid-template-columns: 1fr;
-    img{
-       height: 32vh;
+    img {
+      height: 32vh;
     }
   }
 

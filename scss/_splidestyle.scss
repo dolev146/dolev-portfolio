@@ -6,7 +6,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   line-height: 1.5;
-  animation: anim-glow 1s infinite alternate;
+  animation: anim-glow 0.7s infinite alternate;
   transition: border-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1),
     background-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1);
 }
@@ -16,7 +16,7 @@
     box-shadow: 0 0 2px -2px $secondary-color;
   }
   100% {
-    box-shadow: 0 0 2px 2px $secondary-color;
+    box-shadow: 0 0 5px lighten($color: $secondary-color, $amount: 30);
   }
 }
 
