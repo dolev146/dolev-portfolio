@@ -189,6 +189,9 @@
 
   .projects {
     grid-template-columns: 1fr;
+    img{
+       height: 32vh;
+    }
   }
 
   .see-my-work {

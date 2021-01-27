@@ -42,7 +42,7 @@ const div = `<div class="splide__track">
                     <a href="vacations.html" class=" splide__slide">
                         <img src="img/projects/vacations-react.png">
                     </a>
-                    <a href="cryptonye.html" class="splide__slide">
+                    <a href="chat.html" class="splide__slide">
                         <img src="img/projects/chat-cord.png">
                     </a>
                     <a href="cryptonye.html" class="splide__slide">
