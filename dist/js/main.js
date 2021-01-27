@@ -31,3 +31,27 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+
+const splider = document.querySelector('.splide')
+const div = `<div class="splide__track">
+                <ul class="splide__list">
+                    <a href="dolevstore.html" class=" splide__slide">
+                        <img src="img/projects/dolev-store.png">
+                    </a>
+                    <a href="vacations.html" class=" splide__slide">
+                        <img src="img/projects/vacations-react.png">
+                    </a>
+                    <a href="cryptonye.html" class="splide__slide">
+                        <img src="img/projects/chat-cord.png">
+                    </a>
+                    <a href="cryptonye.html" class="splide__slide">
+                        <img src="img/projects/coin-coiny.png">
+                    </a>
+                </ul>
+            </div>
+            <div class="splide__progress">
+                <div class="splide__progress__bar">
+                </div>
+            </div>`;
+splider.innerHTML = div
