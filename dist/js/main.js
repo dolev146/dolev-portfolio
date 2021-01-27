@@ -45,6 +45,9 @@ const div = `<div class="splide__track">
                     <a href="chat.html" class="splide__slide">
                         <img src="img/projects/chat-cord.png">
                     </a>
+                    <a href="portfolio.html" class="splide__slide">
+                        <img src="img/projects/porfolio-project.png">
+                    </a>
                     <a href="cryptonye.html" class="splide__slide">
                         <img src="img/projects/coin-coiny.png">
                     </a>
