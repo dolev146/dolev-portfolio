@@ -93,3 +93,23 @@
     }
   }
 }
+
+.align-icons-full-stack-course {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.spaceing-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mg-41 {
+  margin-top: 41px;
+}
+
+.mg-t-63 {
+  margin-top: 63px;
+}

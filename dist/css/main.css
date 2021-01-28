@@ -471,6 +471,22 @@ main {
     .about-info .job:hover {
       box-shadow: 10px 20px 30px #03bcf4; }
 
+.align-icons-full-stack-course {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+.spaceing-icons {
+  display: flex;
+  justify-content: space-around; }
+
+.mg-41 {
+  margin-top: 41px; }
+
+.mg-t-63 {
+  margin-top: 63px; }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -858,6 +874,10 @@ ul {
     flex-direction: column; } }
 
 @media screen and (max-width: 500px) {
+  .mg-t-63 {
+    margin-top: 23px; }
+  .align-icons-full-stack-course {
+    margin-top: 20px; }
   main {
     padding: 2rem; }
     main.fix-padding-in-contact-page {

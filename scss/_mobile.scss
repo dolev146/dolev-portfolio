@@ -157,6 +157,14 @@
 
 // Smartphones
 @include mediaSm {
+  .mg-t-63 {
+    margin-top: 23px;
+  }
+
+  .align-icons-full-stack-course {
+    margin-top: 20px;
+  }
+
   main {
     padding: 2rem;
     &.fix-padding-in-contact-page {
