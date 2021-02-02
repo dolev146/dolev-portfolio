@@ -1,5 +1,8 @@
 const nodemailer = require("nodemailer");
 const html_for_customer = require("./html_for_customer_email");
+require("dotenv").config();
+const portfolioEmail = process.env.PORTFOLIO_EMAIL;
+const portfolioPassword = process.env.PORTFOLIO_PASSWORD;
 
 // async..await is not allowed in global scope, must use a wrapper
 const main = async (
@@ -14,8 +17,8 @@ const main = async (
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "dolev.portfolio@gmail.com",
-        pass: "Sb9703922",
+        user: portfolioEmail,
+        pass: portfolioPassword,
       },
     });
 
@@ -82,7 +85,7 @@ const second = async (
 
     const mailOptions = {
       from: "dolev.portfolio@gmail.com",
-      to: 'dolev146@gmail.com',
+      to: "dolev146@gmail.com",
       subject: "Someone tried to Contact u From your website!",
       html: html_Email,
       attachments: [
