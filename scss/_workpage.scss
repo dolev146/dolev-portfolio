@@ -133,7 +133,7 @@
 
 .btn-info {
   @extend .btn;
-  background: adjust-hue($color: $secondary-color, $degrees: 20deg);
+  background: adjust-hue($color: $secondary-color, $degrees: 150deg);
   color: #fff;
   grid-area: btn-info;
 }

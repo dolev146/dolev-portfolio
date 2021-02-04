@@ -152,7 +152,12 @@ main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
   main#home {
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: calc(10vh - 60px);
+    padding-left: 4rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 0; }
     main#home h1 {
       margin-top: 2vh; }
 
@@ -384,6 +389,8 @@ main {
   overflow: hidden;
   line-height: 1.5;
   animation: anim-glow 0.7s infinite alternate;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
   transition: border-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1), background-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1); }
 
 @keyframes anim-glow {
@@ -394,6 +401,10 @@ main {
 
 .splide {
   margin-top: 15px; }
+
+.inside_home.splide {
+  margin-top: 0px;
+  padding-top: 0; }
 
 .splide__track {
   margin-bottom: 10px;
@@ -588,7 +599,7 @@ main {
   grid-area: btn-light; }
 
 .btn-info {
-  background: #c7ee1a;
+  background: #1aa4ee;
   color: #fff;
   grid-area: btn-info; }
 
@@ -747,7 +758,10 @@ ul {
   outline: none;
   width: 10vw;
   font-weight: 900;
-  animation: animate 5s linear infinite; }
+  animation: animate 5s linear infinite;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1; }
 
 @keyframes animate {
   0%,
@@ -759,7 +773,7 @@ ul {
   80%,
   90.1%,
   92% {
-    color: #0e3742;
+    color: #675908;
     text-shadow: none; }
   18.1%,
   20.1%,
@@ -859,7 +873,7 @@ ul {
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr;
-    gap: 10px; }
+    gap: 30px; }
   .cool-border {
     margin-bottom: 10px; }
   .skills-header:before {
@@ -874,6 +888,8 @@ ul {
     flex-direction: column; } }
 
 @media screen and (max-width: 500px) {
+  .splide__slide {
+    width: 45vw !important; }
   .mg-t-63 {
     margin-top: 23px; }
   .align-icons-full-stack-course {
@@ -889,9 +905,14 @@ ul {
     display: none; }
   main#home h1 {
     margin-top: 10vh; }
+  .fix-homepage-fonsize-mobile {
+    font-size: 1rem !important;
+    line-height: 3rem; }
   .lg-heading {
     margin-top: 2.5rem;
     font-size: 5rem; }
+    .lg-heading.name-mobile-fontsize-fix {
+      font-size: 2.3rem !important; }
     .lg-heading .vaction {
       font-size: 4rem; }
     .lg-heading.in-contact {
@@ -938,3 +959,7 @@ ul {
     display: flex; }
   body {
     margin: 0 0 55px 0; } }
+
+@media screen and (max-width: 380px) {
+  .fixing-size-on-small-devices {
+    font-size: 1rem; } }

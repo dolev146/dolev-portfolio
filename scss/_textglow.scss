@@ -7,6 +7,10 @@
   width: 10vw;
   font-weight: 900;
   animation: animate 5s linear infinite;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+
 }
 @keyframes animate {
   0%,
@@ -18,7 +22,7 @@
   80%,
   90.1%,
   92% {
-    color: #0e3742;
+    color: darken($color: $secondary-color, $amount: 30) ;
     text-shadow: none;
   }
   18.1%,

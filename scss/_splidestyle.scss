@@ -7,6 +7,9 @@
   overflow: hidden;
   line-height: 1.5;
   animation: anim-glow 0.7s infinite alternate;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  // animation-iteration-count: 3;
   transition: border-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1),
     background-color 0.15s cubic-bezier(0.54, 0.01, 0.1, 1);
 }
@@ -23,6 +26,14 @@
 .splide {
   margin-top: 15px;
 }
+
+.inside_home {
+  &.splide {
+    margin-top: 0px;
+    padding-top: 0;
+  }
+}
+
 .splide__track {
   margin-bottom: 10px;
   padding-bottom: 15px;

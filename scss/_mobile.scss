@@ -129,7 +129,7 @@
       "job2"
       "job3";
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 30px;
   }
   .cool-border {
     margin-bottom: 10px;
@@ -157,6 +157,10 @@
 
 // Smartphones
 @include mediaSm {
+  .splide__slide {
+    width: 45vw !important;
+  }
+
   .mg-t-63 {
     margin-top: 23px;
   }
@@ -185,9 +189,18 @@
     margin-top: 10vh;
   }
 
+  .fix-homepage-fonsize-mobile {
+    font-size: 1rem !important;
+    line-height: 3rem;
+  }
+
   .lg-heading {
     margin-top: 2.5rem;
     font-size: 5rem;
+
+    &.name-mobile-fontsize-fix {
+      font-size: 2.3rem !important;
+    }
 
     .vaction {
       font-size: 4rem;
@@ -265,5 +278,11 @@
   }
   body {
     margin: 0 0 55px 0;
+  }
+}
+
+@include mediaXSmall {
+  .fixing-size-on-small-devices {
+    font-size: 1rem;
   }
 }

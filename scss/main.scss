@@ -66,6 +66,12 @@ main {
     h1 {
       margin-top: 2vh;
     }
+    min-height: calc(10vh - 60px);
+    padding-left: 4rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 0;
+    
   }
 }
 
@@ -80,6 +86,8 @@ main {
 .inline {
   display: inline;
 }
+
+
 
 @import "contactmodal";
 @import "animatedbuttons";
