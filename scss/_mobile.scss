@@ -157,6 +157,9 @@
 
 // Smartphones
 @include mediaSm {
+  .one-and-a-half-rem-font-size {
+    font-size: 1.5rem;
+  }
   .splide__slide {
     width: 45vw !important;
   }

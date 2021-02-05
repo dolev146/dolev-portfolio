@@ -171,6 +171,10 @@ main {
 .inline {
   display: inline; }
 
+.text-align-right {
+  display: block;
+  text-align: right; }
+
 .modal-wrapper {
   font-size: 17px;
   line-height: 1.6;
@@ -455,6 +459,10 @@ main {
   text-decoration-line: underline;
   text-decoration-style: double; }
 
+.semi-header-jobs {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 0px 0px; }
+
 .about-info {
   display: grid;
   gap: 30px;
@@ -475,6 +483,8 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid;
@@ -493,10 +503,10 @@ main {
   justify-content: space-around; }
 
 .mg-41 {
-  margin-top: 41px; }
+  margin-top: 30px; }
 
 .mg-t-63 {
-  margin-top: 63px; }
+  margin-top: 30px; }
 
 .projects {
   display: grid;
@@ -888,6 +898,8 @@ ul {
     flex-direction: column; } }
 
 @media screen and (max-width: 500px) {
+  .one-and-a-half-rem-font-size {
+    font-size: 1.5rem; }
   .splide__slide {
     width: 45vw !important; }
   .mg-t-63 {

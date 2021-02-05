@@ -53,6 +53,11 @@
   text-decoration-style: double;
 }
 
+.semi-header-jobs {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
+}
+
 .about-info {
   display: grid;
   gap: 30px;
@@ -84,6 +89,8 @@
   }
 
   .job {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
@@ -107,9 +114,9 @@
 }
 
 .mg-41 {
-  margin-top: 41px;
+  margin-top: 30px;
 }
 
 .mg-t-63 {
-  margin-top: 63px;
+  margin-top: 30px;
 }

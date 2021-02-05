@@ -71,7 +71,6 @@ main {
     padding-top: 4rem;
     padding-right: 4rem;
     padding-bottom: 0;
-    
   }
 }
 
@@ -87,7 +86,10 @@ main {
   display: inline;
 }
 
-
+.text-align-right {
+  display: block;
+  text-align: right;
+}
 
 @import "contactmodal";
 @import "animatedbuttons";
