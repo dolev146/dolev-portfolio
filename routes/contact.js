@@ -36,8 +36,8 @@ router.post("/sms", async (req, res) => {
       const msg = `
 תודה שפנית אליי , אחזור אליך בקרוב 
   דולב דובלון`;
-      // sms.sendSms(phone_number, msg);
-      // res.json({ msg: "SMS send seccessfully to", err: false });
+      sms.sendSms(phone_number, msg);
+      res.json({ msg: "SMS send seccessfully to", err: false });
     }
   } catch (error) {
     res.sendStatus(500);
