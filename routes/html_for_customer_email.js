@@ -1,5 +1,5 @@
 
-const html = (
+const  html = (
   CustomerName,
   CustomerCompany,
   CustomerEmail,
@@ -50,7 +50,7 @@ body {
 <body>
     <div class="content-wrapper">
         <header>
-            <img src="cid:d" alt="logo" height="5%">
+            <img src="D.png" alt="logo" height="5%">
             <h1>Thank u For Reaching out!</h1>
         </header>
         <main>

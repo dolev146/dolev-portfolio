@@ -3,7 +3,7 @@ const {
   second: email_for_dolev_function,
 } = require("./email_for_customer");
 const sms_function = require("./sms_function");
-const nodemailer = require("nodemailer");
+
 let router = require("express").Router();
 
 router.post("/email", async (req, res) => {
@@ -36,8 +36,8 @@ router.post("/sms", async (req, res) => {
       const msg = `
 תודה שפנית אליי , אחזור אליך בקרוב 
   דולב דובלון`;
-      sms.sendSms(phone_number, msg);
-      res.json({ msg: "SMS send seccessfully to", err: false });
+      // sms.sendSms(phone_number, msg);
+      // res.json({ msg: "SMS send seccessfully to", err: false });
     }
   } catch (error) {
     res.sendStatus(500);
